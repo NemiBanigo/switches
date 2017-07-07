@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The Switch Button </title>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="switch.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css"> 
+</head>
+<body>
+	<div class="container"> 
+		<div class="box"> 
+			<span class="rectangle-box first"> 
+				<span id="primary" class="button first"> 
+					<span class="circle"> </span>
+				</span>
+			</span>
+			<span class="rectangle-box second">
+				<span id="secondary" class="button-second">
+					<span class="circle-second"> </span>
+				</span>
+
+			</span>
+		</div>
+
+
+ <!-- Javscript starts here/-->
+
+	<script type="text/javascript"> 
+
+	  const button = document.querySelector("#primary");
+
+	   function nemi() {
+		   
+		   const rect = button.getBoundingClientRect();
+		    let curLeft = 583;
+			if(rect.left <= curLeft) {
+				button.style.transform= "translateX(150px)";
+			} else {	
+				button.style.transform= "translateX(0)";
+			}
+			console.log(rect.left);
+	   }
+	    button.addEventListener('click', nemi);
+
+
+		//secondfunction
+
+
+		const button1 = document.querySelector("#secondary");
+
+        function secondButton() {
+		   
+		   const rect = button1.getBoundingClientRect();
+		    let curLeft = 700;
+			if(rect.right >= curLeft) {
+				button1.style.transform = "translateX(-150px)";
+			} else {	
+				button1.style.transform= "translateX(0)";
+			}
+			console.log(rect.right);
+	   }
+	    button1.addEventListener('click', secondButton); 
+	</script>
+
+
+	</body>
+</html>

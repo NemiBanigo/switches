@@ -1,0 +1,152 @@
+body{
+	font-family:"Helvetica" ;
+	margin:0;
+	background-image: url(../images/papyrus.jpg);
+}
+
+.navigation{
+	background: #360033; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #360033 , #0b8793); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #360033 , #0b8793); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	margin: 0;
+}
+.navigation-list{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding-left: 0;
+
+
+}
+.navigation-list li {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 100;
+	color: teal;
+	padding: 15px;
+	letter-spacing: 2px;
+	margin: 0;
+
+
+}
+.navigation-list .logo{
+	font-weight: 800;
+
+}
+.navigation-list li:hover{
+	background: yellow;
+	cursor: pointer;
+
+}
+
+.background{
+	background-image: url("../images/ser.jpg");
+	padding: 50px 75px;
+	height: 600px;
+    background-size: cover;
+    background-position: bottom center;
+
+}
+.background-content{
+	color: #FFF;
+	text-align: center;
+	font-weight: 300;
+	padding: 70px 60px 70px 60px;
+	border: 1px solid;
+	border-color: #FFF;
+	/*background-image: url(../images/papyrus.jpg);*/
+
+
+
+}
+
+
+.background-content h1{
+	font-size: 60px;
+}
+
+
+.banner-content {
+	text-transform: uppercase;
+	color:  #D7263D;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 20px 70px;
+	font-size: 22px;
+	background: #FFF;
+	background-image: url(../images/papyrus.jpg);
+
+
+}
+.banner-content p {
+	color: #333;
+  	font-size: 16px;
+  	line-height: 48px;
+  	margin-top: 60px;
+  	text-transform: none;
+  	padding: 20px 70px;
+
+
+}
+
+
+
+.byline {
+	border-top: 1px solid;
+	border-bottom:1px solid;
+	color: #000;
+	border-color: teal;
+	display: inline-block;
+	margin-top: 40px;
+	padding: 10px;
+
+}
+
+.content {
+	text-transform: uppercase;
+	border: 1px solid;
+	padding: 40px;
+	border-color: #D7263D;
+	color: #D7263D;
+	margin: 0 100px;
+	text-align: center;
+}
+
+.content h2{
+	line-height: 24px;
+	font-size: 20px;
+}
+
+.share{
+	text-align: center;
+	margin: 100px 0;
+}
+
+.share a{
+	background: #D7263D;
+	border: 1px solid #D7263D;
+	color: #ffffff;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center; 
+	/*display: inline-block;*/
+	text-decoration: none;
+	margin-right: 40px;
+	min-width: 200px;
+	border-radius: 3px;
+}
+
+.share a:hover{
+	border: 1px solid #D7263D;
+	background: #fff;
+	color: #D7263D;
+}
+
+
+/******
+Utility class
+*******/
+
+.img-responsive{
+	width: 100%;
+}
